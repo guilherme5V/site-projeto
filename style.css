@@ -9,13 +9,13 @@ header {
     border-bottom: 2px solid #c70a0a;
     text-align: center;
     padding: 20px;
-    font-size: 32px;
+    font-size: 2rem; /* Ajuste para tamanhos relativos */
     color: #dc203c;
 }
 
 .categoriatext {
     background-color: #ff7f7f;
-    padding: 80px 0;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -27,19 +27,20 @@ header {
 
 h1 {
     font-family: "Chakra Petch", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     color: #dc203c;
 }
 
 p {
     font-family: "Chakra Petch", sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     color: red;
 }
 
 .categoria-videos {
     display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
     overflow-x: auto;
     gap: 12px;
     padding: 20px; 
@@ -48,10 +49,11 @@ p {
 .categoria {
     flex-shrink: 0; 
     text-align: center;
+    width: 100%; /* Ajusta a largura em dispositivos menores */
 }
 
 .categoria-videos img {
-    width: 80%; 
+    width: 100%; 
     height: auto; 
     object-fit: cover; 
     opacity: 0.7;
@@ -74,8 +76,6 @@ p {
     border: 5px solid red;
 }
 
-
-
 @media (max-width: 768px) {
     .categoria-videos img {
         width: 100%; 
@@ -83,70 +83,77 @@ p {
     }
 
     .categoria {
-        flex-basis: 100%;
+        width: 100%;
     }
 
     .categoriatext {
-        padding: 40px 0;
+        padding: 2.5rem 0;
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     p {
-        font-size: 18px;
+        font-size: 1rem;
     }
 }
 
-#titulo-principal{
+#titulo-principal {
     cursor: pointer; 
     transition: all 0.3s ease;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #dc203c;
 }
-#titulo-principal:hover{
+
+#titulo-principal:hover {
     color: #000000; 
     transform: scale(1.1); 
     text-shadow: 0px 0px 10px #222222;
 }
-.segundo-titulo:hover{
-  transform: translateY(-5px);
-  color: #ea3208;
-  box-shadow: 0px 5px 10px rgba(221, 5, 5, 0.551);
-  text-decoration: none;
+
+.segundo-titulo:hover {
+    transform: translateY(-5px);
+    color: #ea3208;
+    box-shadow: 0px 5px 10px rgba(221, 5, 5, 0.551);
+    text-decoration: none;
 }
-.segundo-titulo-1:hover{
-    
+
+.segundo-titulo-1:hover {
     transform: rotate(5deg);
     color: #1fe205;
-    
-      }
-      .segundo-titulo-1{
-        text-decoration: none;
-        color: #dc203c;
-        font-size: 24px;
-      }
-      .btn-hollow{
-        cursor: pointer; 
-        transition: all 0.3s ease; 
-        color: #e71359;
-        text-decoration: none;
-    }
-    .btn-hollow:hover{
-        color: #d52020; 
-        transform: scale(1.1); 
-        text-shadow: 0px 0px 10px #a21313;
-    }
-#castlevania:hover{
+}
+
+.segundo-titulo-1 {
+    text-decoration: none;
+    color: #dc203c;
+    font-size: 1.5rem;
+}
+
+.btn-hollow {
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    color: #e71359;
+    text-decoration: none;
+}
+
+.btn-hollow:hover {
+    color: #d52020; 
+    transform: scale(1.1); 
+    text-shadow: 0px 0px 10px #a21313;
+}
+
+#castlevania:hover {
     transform: translateY(-5px);
     color: #ea3208;
     box-shadow: 0px 5px 10px rgba(221, 5, 5, 0.551);
     text-decoration: none;
     color: #dc203c;
 }
-#castlevania{text-decoration: none;
-color: #dc203c;
-font-size: 24px;
+
+#castlevania {
+    text-decoration: none;
+    color: #dc203c;
+    font-size: 1.5rem;
 }
