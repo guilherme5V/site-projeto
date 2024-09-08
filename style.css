@@ -1,12 +1,13 @@
 body {
-  background-color: #151414;
+  background-color: #121212;
   color: #fff;
   margin: 0;
   font-family: "Chakra Petch", sans-serif;
 }
 
 header {
-  border-bottom: 2px solid #c70a0a;
+  border-bottom: 2px solid #070707;
+  box-shadow: 40px 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
   padding: 20px;
   font-size: 32px;
@@ -14,7 +15,7 @@ header {
 }
 
 .categoriatext {
-  background-color: #ff7f7f;
+  background-color: #303030;
   padding: 80px 0;
   display: flex;
   justify-content: center;
@@ -29,16 +30,17 @@ h1 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 40px;
   text-align: center;
-  color: #dc203c;
+  color: #BF4545;
 }
 
 p {
   font-family: "Chakra Petch", sans-serif;
   font-size: 25px;
-  color: red;
+  color: #800080;
 }
 
 .categoria-videos {
+  border-bottom: 1px solid #070707;
   display: flex;
   overflow-x: auto;
   gap: 12px;
@@ -48,6 +50,7 @@ p {
 .categoria {
   flex-shrink: 0;
   text-align: center;
+  
 }
 
 .categoria-videos img {
@@ -59,7 +62,7 @@ p {
 }
 
 .categoria-videos img:hover {
-  opacity: 2;
+  opacity: 1;
 }
 
 .categoria h2 {
@@ -71,14 +74,14 @@ p {
 }
 
 .video__principal {
-  border: 5px solid red;
+  border: 5px solid #800080;
 }
 
 @media (max-width: 768px) {
   .categoria-videos img {
     width: 100%;
     height: auto;
-    border: 5px solid rgb(216, 190, 190);
+    border: 5px solid #800080;
   }
 
   .categoria {
@@ -103,7 +106,7 @@ p {
   transition: all 0.3s ease;
   text-decoration: none;
   font-size: 40px;
-  color: #dc203c;
+  color: #BF4545;
 }
 #titulo-principal:hover {
   color: #000000;
@@ -162,14 +165,95 @@ p {
   display: inline-block;
   font-size: 12px;
   position: absolute;
-  top: 10%;
+  top: 9.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
 }
 
-#pergunta:hover{
+#pergunta:hover {
   color: #f22727;
   transform: scale(1.1);
   text-shadow: 0px 0px 10px #da0e0e;
+}
+
+body.button.troca-cores:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+button.troca-cores {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #A60303;
+  color:  #A6A6A6;
+  border: none;
+  height: 25px;
+  font-size: 16px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+button:hover {
+  background: #000000;
+  color: #f0082e;
+}
+button:before,
+button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #F20505;
+  transition: 400ms ease all;
+}
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+p#showUser{
+  color:  #d3a408;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #A6A6A6;
+  height: auto;
+  width: 255px;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  
+}
+p#showUser:hover{
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+}
+.link-venom{
+  text-decoration: none;
+}
+.link-venom:hover{
+  
+  
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: underline rgba(255, 0, 0, 0.356);
+}
+.link-venom:visited{
+  color: green;
+  background-color: yellow;
+  font-weight: lighter;
+
 }

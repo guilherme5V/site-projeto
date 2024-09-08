@@ -14,16 +14,25 @@ swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="icons8-fita-de-bookmark-94.png" type="image/x-icon">
+    
+    <script src="https://cdn.jsdelivr.net/npm/timezone-js@latest/timezone.min.js"></script>
+    
+    <script src="script.js"></script>
   </head>
   <body>
     <p id="pergunta" style="text-align: center;"></p>
     <input type="text" id="resposta">
     
-    <header><a href="https://www.hollowknight.com/" target="_blank" class="btn-hollow">Hollow Knights</a></header>
+    <header>
+      <div id="cores"><button class="troca-cores">Troca cores</button></div>
+      
+      <a href="https://www.hollowknight.com/" target="_blank" class="btn-hollow">Hollow Knights</a></header>
     <section class="categoriatext">
       <div class="chamada-texto">
         <a href="https://hollowknightsilksong.com/" target="_blank" id="titulo-principal">Hollow knights silksong</a>
-        <p>#venom</p>
+        <a class="link-venom" target="_blank" href="https://www.omelete.com.br/filmes/venom-3-data-elenco-tudo-sobre">
+          <p>#venom</p>
+        </a>
       </div>
       <div class="video__principal">
         <iframe
@@ -126,5 +135,10 @@ swap"
       
       
   </div>
+  <div><section>
+
+    <p id="showUser" class="horario"></p>
+    
+  </section></div>
   </body>
 </html>
