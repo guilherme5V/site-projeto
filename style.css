@@ -157,7 +157,7 @@ p {
 #resposta {
   background-color: #000000; /* Verde */
   border-radius: 3px;
-  color: rgb(105, 230, 9);
+  color: rgb(246, 247, 245);
   padding: 8px 32px;
   text-align: center;
   text-decoration: none;
@@ -167,6 +167,7 @@ p {
   top: 9.5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 9999px;
 }
 #pergunta{
   color: #ffffff;
@@ -191,18 +192,20 @@ button.troca-cores {
   background: #070404;
   color: #dde00a;
   border: none;
-  height: 25px;
+  height: 20px;
+  width: 150px;
   font-size: 16px;
   padding: 0 2em;
   cursor: pointer;
   transition: 800ms ease all;
   outline: none;
   text-shadow: 0px 0px 20px #fdfdfd;
-
+  border-radius: 0.375rem; /* 6px */
 }
 button:hover {
   background: #000000c0;
   color: #f8f553;
+  border-radius: 0.375rem; /* 6px */
 }
 button:before,
 button:after {
@@ -236,6 +239,7 @@ p#showUser {
   text-align: center;
   margin: auto;
   border-radius: 5px;
+  box-shadow: 0 20px 20px -3px rgba(243, 242, 242, 0.87), 0 8px 10px -6px rgba(238, 232, 232, 0.829);
 }
 p#showUser:hover {
   background-color: lightgray;
@@ -275,6 +279,7 @@ p#showUser:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 25px 50px -12px rgba(205, 240, 11, 0.959);
 }
 .link-quadrado{
   text-decoration: none;
@@ -301,5 +306,6 @@ p#showUser:hover {
   font-size: medium;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom-left-radius: 0.5rem; /* 8px */
   
 }
