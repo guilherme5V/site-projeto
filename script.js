@@ -45,3 +45,37 @@ function atualizarHora() {
     "hora"
   ).textContent = `${horas}:${minutos}:${segundos}`;
 }
+function verificarResposta(){
+  const respostaUsuario = document.getElementById("resposta").value;
+  const respostaCorreta = "sim";
+
+  if (respostaUsuario.toLowerCase() === respostaCorreta.toLowerCase()){
+    alert("Resposta correta!");
+
+  }else{
+    alert("resposta incorreta")
+  }
+}
+
+// Corrected function with removed extra parenthesis
+function gerarCorAleatoria() {
+  return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+}
+
+function trocarCores() {
+  // Using ID selector for the button container (#cores)
+  const elementoCores = document.getElementById('cores');
+  const buttonCores = elementoCores.querySelector('button'); // Select the button inside the container
+
+  buttonCores.style.backgroundColor = gerarCorAleatoria();
+  buttonCores.style.color = gerarCorAleatoria();
+
+  // Alternatively, if you want to change the color of all elements inside the container:
+  // const elementos = document.getElementById('cores').querySelectorAll('*');
+  // elementos.forEach(elemento => {
+  //   elemento.style.backgroundColor = gerarCorAleatoria();
+  //   elemento.style.color = gerarCorAleatoria();
+  // });
+}
+
+// ... other functions like verificarResposta()

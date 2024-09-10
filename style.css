@@ -30,7 +30,7 @@ h1 {
   font-family: "Chakra Petch", sans-serif;
   font-size: 40px;
   text-align: center;
-  color: #bf4545;
+  color: #f3eded;
 }
 
 p {
@@ -105,12 +105,12 @@ p {
   transition: all 0.3s ease;
   text-decoration: none;
   font-size: 40px;
-  color: #bf4545;
+  color:  #ffffff;
 }
 #titulo-principal:hover {
   color: #000000;
   transform: scale(1.1);
-  text-shadow: 0px 0px 10px #222222;
+  text-shadow: 0px 0px 10px #fdfdfd;
 }
 .segundo-titulo:hover {
   transform: translateY(-5px);
@@ -120,35 +120,35 @@ p {
 }
 .segundo-titulo-1:hover {
   background-color: #aaca0b;
-  box-shadow: 0px 5px 0px rgba(182, 214, 3, 0.2);
+  box-shadow: 0px 5px 0px rgba(209, 238, 42, 0.575);
   color: #1fe205;
 }
 .segundo-titulo-1 {
   text-decoration: none;
-  color: #dc203c;
+  color: #fcfcfc;
   font-size: 24px;
 }
 .btn-hollow {
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #e71359;
+  color: #ffffff;
   text-decoration: none;
 }
 .btn-hollow:hover {
-  color: #d52020;
+  color: #000000;
   transform: scale(1.1);
-  text-shadow: 0px 0px 10px #a21313;
+  text-shadow: 0px 0px 10px #f0eeee;
 }
 #castlevania:hover {
   transform: translateY(-5px);
-  color: #ea3208;
-  box-shadow: 0px 5px 10px rgba(221, 5, 5, 0.551);
+  color: #d4d4d4;
+  box-shadow: 0px 5px 10px rgba(236, 236, 236, 0.551);
   text-decoration: none;
-  color: #dc203c;
+  color: #f5f4f4;
 }
 #castlevania {
   text-decoration: none;
-  color: #dc203c;
+  color: #fafafa;
   font-size: 24px;
 }
 .categoria-videos-segundarios {
@@ -168,11 +168,14 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#pergunta{
+  color: #ffffff;
+}
 
 #pergunta:hover {
-  color: #f22727;
+  color: #000000;
   transform: scale(1.1);
-  text-shadow: 0px 0px 10px #da0e0e;
+  text-shadow: 0px 0px 10px #dfd9d9;
 }
 
 body.button.troca-cores:before {
@@ -185,8 +188,8 @@ button.troca-cores {
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #a60303;
-  color: #a6a6a6;
+  background: #070404;
+  color: #dde00a;
   border: none;
   height: 25px;
   font-size: 16px;
@@ -194,10 +197,12 @@ button.troca-cores {
   cursor: pointer;
   transition: 800ms ease all;
   outline: none;
+  text-shadow: 0px 0px 20px #fdfdfd;
+
 }
 button:hover {
-  background: #000000;
-  color: #f0082e;
+  background: #000000c0;
+  color: #f8f553;
 }
 button:before,
 button:after {
@@ -207,7 +212,7 @@ button:after {
   right: 0;
   height: 2px;
   width: 0;
-  background: #f20505;
+  background: #e2e607;
   transition: 400ms ease all;
 }
 button:after {
@@ -223,7 +228,7 @@ button:hover:after {
 }
 
 p#showUser {
-  color: blanchedalmond;
+  color: rgb(255, 255, 255);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #a6a6a6;
   height: auto;
@@ -237,15 +242,20 @@ p#showUser:hover {
   color: white;
   font-weight: bold;
 }
+.venom{
+  color: white;
+  text-decoration: none;
+}
 .link-venom {
   text-decoration: none;
+  color: white;
 }
 .link-venom:hover {
   background-color: lightgray;
   color: white;
-  font-weight: bold;
+  font-weight: lighter;
   border-radius: 5px;
-  text-decoration: underline rgba(255, 0, 0, 0.356);
+  
 }
 .link-venom:visited {
   color: green;
@@ -253,15 +263,15 @@ p#showUser:hover {
   font-weight: lighter;
 }
 .quadrado-um{
-  width: 300px;
-  height: 200px;
-  background-color:   coral;
+  width: 220px;
+  height: 150px;
+  background-color:   rgb(2, 2, 2);
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 10px;
-  border: #222222 solid 15px;
-  border-style: double;
+  border: #dd0d0d91 solid 40px;
+  border-style: outset;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,10 +279,27 @@ p#showUser:hover {
 .link-quadrado{
   text-decoration: none;
   font-weight: lighter;
-  color: cornflowerblue;
+  color: rgb(252, 252, 252);
+  
   
 }
 .link-quadrado:hover{
-  background-color: aquamarine;
+  background-color: rgba(253, 10, 10, 0.781);
   border-radius: 10px;
+}
+.verifica-botao{
+  margin: auto;
+  margin-top: 75px;
+  justify-content: center;
+  text-align: center;
+  width: 89px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  background-color:  #292626;
+  color: #ffffff7a;
+  font-size: medium;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
