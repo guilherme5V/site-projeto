@@ -297,6 +297,10 @@ p#showUser:hover {
 .link-quadrado:hover {
   background-color: rgba(253, 10, 10, 0.781);
   border-radius: 10px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-delay: 150ms;
 }
 .verifica-botao {
   margin: auto;
@@ -314,6 +318,18 @@ p#showUser:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-bottom-left-radius: 0.5rem; /* 8px */
 }
+.verifica-botao.after {
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
 #h2-carros {
   text-align: center;
   position: relative;
@@ -329,3 +345,28 @@ p#showUser:hover {
   box-shadow: inset 0 2px 5px 0 rgba(245, 8, 8, 0.432);
   width: 300px;
 }
+.carro {
+  width: 28%;
+  height: 28%;
+  margin: 3%;
+}
+#carro4 {
+  margin: 2%;
+  margin-top: 0;
+}
+.carro:hover {
+  opacity: 2.35;
+  filter: saturate(1.65);
+  filter: brightness(1.15);
+}
+.sessao-2{
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .sessao-2 {
+    width: 95%;}
+    .categoria{
+      width: 95%;
+    }
+  }

@@ -3,7 +3,7 @@ window.onload = function () {
   resposta.focus();
 };
 const msg = "Sua localização é ";
-let timezone; // Variável para armazenar o fuso horário
+let timezone; //
 
 function showUserTime() {
   if (navigator.geolocation) {
@@ -20,7 +20,7 @@ function showPosition(position) {
 
   TimezoneJS.timezone.zoneFileVersion = "2019a";
   TimezoneJS.timezone.init({ async: false });
-  timezone = TimezoneJS.gettimezone({ lat: latitude, lng: longitude }); // Armazena o fuso horário
+  timezone = TimezoneJS.gettimezone({ lat: latitude, lng: longitude });
 
   updateTime();
 }
@@ -30,10 +30,8 @@ function updateTime() {
   document.getElementById("showUser").innerHTML = time;
 }
 
-// Chamar a função inicial para obter a localização e exibir a hora
 showUserTime();
 
-// Atualizar a hora a cada 15 segundos
 setInterval(updateTime, 1000);
 
 function atualizarHora() {
@@ -50,31 +48,61 @@ function verificarResposta() {
   const respostaCorreta = "sim";
 
   if (respostaUsuario.toLowerCase() === respostaCorreta.toLowerCase()) {
-    alert("Resposta correta!");
+    alert("Resposta correta! 🙄");
   } else {
-    alert("resposta incorreta");
+    alert("resposta incorreta 😕");
   }
 }
 
-// Corrected function with removed extra parenthesis
-function gerarCorAleatoria() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+function TrocaCores() {
+  var botao = document.getElementById("corbotao");
+  var cores = [
+    "red",
+    "green",
+    "blue",
+    "white",
+    "black",
+    "purple",
+    "crimson",
+    "coral",
+    "blanchedalmond",
+  ];
+  var cores1 = [
+    "yellow",
+    "orange",
+    "pink",
+    "gray",
+  ];
+
+  var indice = Math.floor(Math.random() * cores.length);
+  botao.style.backgroundColor = cores[indice];
+
+  var corpo = document.getElementById("site");
+  corpo.style.backgroundColor = cores[indice];
+
+  var titulo = document.getElementById("titulo-principal");
+  titulo.style.color = cores[indice];
+
+  var paragrafo = document.getElementById("venom-p");
+  paragrafo.style.color = cores[indice];
+
+  var verifica = document.getElementById("verifica-botao-1");
+  verifica.style.color = cores[indice];
+  verifica.style.backgroundColor = cores1[indice];
+
+  var castle = document.getElementById("castlevania");
+  castle.style.color = cores[indice];
+  castle.style.backgroundColor = cores1[indice];
+  
+  var fps = document.getElementById("fps");
+  fps.style.color = cores1[indice];
+  fps.style.backgroundColor = cores[indice];
+
+
+  var perguntahollow = document.getElementById("pergunta");
+  perguntahollow.style.color = cores1[indice];
+  perguntahollow.style.color = cores1[indice];
+
+  var btnhollow = document.getElementById("hollow-btn");
+  btnhollow.style.color = cores[indice];
 }
-
-function trocarCores() {
-  // Using ID selector for the button container (#cores)
-  const elementoCores = document.getElementById("cores");
-  const buttonCores = elementoCores.querySelector("button"); // Select the button inside the container
-
-  buttonCores.style.backgroundColor = gerarCorAleatoria();
-  buttonCores.style.color = gerarCorAleatoria();
-
-  // Alternatively, if you want to change the color of all elements inside the container:
-  // const elementos = document.getElementById('cores').querySelectorAll('*');
-  // elementos.forEach(elemento => {
-  //   elemento.style.backgroundColor = gerarCorAleatoria();
-  //   elemento.style.color = gerarCorAleatoria();
-  // });
-}
-
-// ... other functions like verificarResposta()
